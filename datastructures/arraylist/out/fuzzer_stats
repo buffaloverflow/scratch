@@ -1,0 +1,37 @@
+start_time        : 1667698108
+last_update       : 1667703785
+run_time          : 5676
+fuzzer_pid        : 12208
+cycles_done       : 83
+cycles_wo_finds   : 0
+execs_done        : 2339560
+execs_per_sec     : 412.13
+execs_ps_last_min : 7.14
+paths_total       : 25
+paths_favored     : 3
+paths_found       : 24
+paths_imported    : 0
+max_depth         : 3
+cur_path          : 22
+pending_favs      : 1
+pending_total     : 3
+variable_paths    : 0
+stability         : 100.00%
+bitmap_cvg        : 7.95%
+unique_crashes    : 0
+unique_hangs      : 0
+last_path         : 1667698710
+last_crash        : 0
+last_hang         : 0
+execs_since_crash : 2339560
+exec_timeout      : 20
+slowest_exec_ms   : 0
+peak_rss_mb       : 0
+cpu_affinity      : 0
+edges_found       : 7
+var_byte_count    : 0
+havoc_expansion   : 3
+afl_banner        : fuzzme
+afl_version       : ++2.68c
+target_mode       : shmem_testcase default
+command_line      : afl-fuzz -i in -o out ./fuzzme
