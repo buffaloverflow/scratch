@@ -1,0 +1,11 @@
+./vuln1
+  1) "vuln"  see details as expected
+  2) "../../../../../etc/shadow"  directory traversal!
+  3) "$(id)" command injection!
+
+./vuln2
+  1) "$(id)" no more command injection!
+  2) "' $(id) '" command injection is back!
+  3) "                            id "  command injection via buffer overflow
+  4) one way to fix the previous problems is to move the buffer, but that doesn't make us secure
+  5) "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA..." segfault b/c stack bof
